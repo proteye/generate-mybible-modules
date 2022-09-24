@@ -1,0 +1,24 @@
+{
+  "name": "generate-mybible-modules",
+  "version": "0.1.0",
+  "description": "Generate MyBible modules from PDF or text sources",
+  "main": "build/index.js",
+  "author": "Ramil Zaynetdinov <ramil.zv@gmail.com>",
+  "private": true,
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "node .",
+    "prestart": "yarn build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "pdf2json": "^2.0.1",
+    "pdfreader": "^2.0.0",
+    "sqlite3": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.19",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.3"
+  }
+}
