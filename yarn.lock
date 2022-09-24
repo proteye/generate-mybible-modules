@@ -557,19 +557,12 @@ path-is-absolute@^1.0.0:
   resolved "https://registry.yarnpkg.com/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
   integrity sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==
 
-pdf2json@2.0.1, pdf2json@^2.0.1:
+pdf2json@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/pdf2json/-/pdf2json-2.0.1.tgz#72e691e0eacb5fe54d2f77d929097a3cf5974f89"
   integrity sha512-gj1kZOV2cA+bHyyZiwNU8AVduT4L+7dQODtJZRev7/23TZ0Mz5ILVLsaCLX2p7A8cdBYyDq6zXEBUBvtXgpIZg==
   dependencies:
     "@xmldom/xmldom" "^0.7.5"
-
-pdfreader@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/pdfreader/-/pdfreader-2.0.0.tgz#e65ee5e237c48ea41d68f6132579465f85b86712"
-  integrity sha512-ieCZ89yl1cb8olOhzMsSJgRJ+mR6tTwG/AGy9nWXzFPhzGgQA76Qh7CCWk6QTE3V30z2Hre1EVagzIjhNERYGw==
-  dependencies:
-    pdf2json "2.0.1"
 
 promise-inflight@^1.0.1:
   version "1.0.1"

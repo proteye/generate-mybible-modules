@@ -1,4 +1,4 @@
-import { TAny } from 'types'
+import { TAny } from '../types'
 import { IDb } from './types'
 import dbSource, { OPEN_READONLY, OPEN_READWRITE, OPEN_CREATE } from './sqlite3'
 import config from '../config'

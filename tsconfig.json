@@ -1,25 +1,27 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
+    "target": "es6",
+    "module": "commonjs",
     "moduleResolution": "node",
     "baseUrl": "./src",
-    "outDir": "build",
+    "rootDir": "./src",
+    "outDir": "./build",
     "esModuleInterop": true,
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": false,
-    "sourceMap": false,
+    "sourceMap": true,
     "resolveJsonModule": true,
     "isolatedModules": false,
     "jsx": "preserve"
   },
   "lib": [
-    "dom",
-    "dom.iterable",
-    "esnext"
+    "es2015"
+  ],
+  "include": [
+    "src/**/*"
   ],
   "exclude": [
     "node_modules",
