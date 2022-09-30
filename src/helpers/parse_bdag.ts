@@ -61,5 +61,5 @@ export const parseBdagFromTxt = async (srcPath: string) => {
 
   fs.writeFileSync(bdagJsonPath, JSON.stringify(items))
 
-  return true
+  return items
 }

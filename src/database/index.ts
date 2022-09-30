@@ -5,8 +5,12 @@ import config from '../config'
 
 const db: IDb = {}
 
+const getDbPath = (dbName: string) => `${config.path}/${dbName}${config.extension}`
+
+const getDb = () => db
+
 const editOrCreateDb = (dbName: string): TAny => {
-  const res = new dbSource.Database(`${config.path}/${dbName}${config.extension}`, OPEN_READWRITE | OPEN_CREATE)
+  const res = new dbSource.Database(getDbPath(dbName), OPEN_READWRITE | OPEN_CREATE)
   db[dbName] = res
 
   return res
@@ -17,7 +21,7 @@ const openDb = (dbName: string): TAny => {
     return db[dbName]
   }
 
-  const res = new dbSource.Database(`${config.path}/${dbName}${config.extension}`, OPEN_READONLY)
+  const res = new dbSource.Database(getDbPath(dbName), OPEN_READONLY)
   db[dbName] = res
 
   return res
@@ -41,4 +45,4 @@ const closeAllDb = (): void => {
   }
 }
 
-export { db, editOrCreateDb, openDb, closeDb, closeAllDb }
+export { getDb, editOrCreateDb, openDb, closeDb, closeAllDb }

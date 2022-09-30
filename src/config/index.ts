@@ -1,5 +1,5 @@
 const config = {
-  path: '../resources',
+  path: 'resources',
   extension: '.SQLite3',
 }
 
