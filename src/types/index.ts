@@ -7,5 +7,5 @@ export type TUid = string
 export interface IDictionaryItem {
   topic: string
   transcription: string
-  description: string
+  definition: string
 }

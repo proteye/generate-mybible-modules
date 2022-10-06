@@ -1,9 +1,6 @@
-import { closeDb, editOrCreateDb } from './database'
-import { parseBdagFromTxt } from './helpers/parse_bdag'
+import { fillDatabase } from './helpers/fill_database'
 
+const srcPath = 'resources/bdag_4.txt'
 const dbName = 'BDAG4.dictionary'
 
-parseBdagFromTxt('resources/bdag_4.txt')
-
-editOrCreateDb(dbName)
-closeDb(dbName)
+fillDatabase(srcPath, dbName)
